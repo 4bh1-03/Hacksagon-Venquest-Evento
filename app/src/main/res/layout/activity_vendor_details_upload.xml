@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img3"
+    android:backgroundTint="#F2C9C9"
+    tools:context=".Vendor_details_upload">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="264dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:text="Enter your details"
+        android:textAlignment="center"
+        android:textColor="#8A2B2B"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="382dp"
+        android:layout_height="640dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#EDE7E7"
+        android:backgroundTint="#F1E8E8"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="655dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/company_name"
+                style="@android:style/Widget.DeviceDefault.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:focusedSearchResultHighlightColor="#8A2B2B"
+                android:hint="Company name"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="#8A2B2B"
+                android:outlineProvider="background"
+                android:outlineSpotShadowColor="#8A2B2B"
+                android:searchResultHighlightColor="#8A2B2B"
+                android:shadowColor="#8A2B2B"
+                android:textColor="#8A2B2B"
+                android:textColorHighlight="#8A2B2B"
+                android:textColorHint="#8A2B2B"
+                android:textColorLink="#8A2B2B"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/your_name"
+                style="@android:style/Widget.DeviceDefault.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:focusedSearchResultHighlightColor="#8A2B2B"
+                android:hint="Your name"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="#8A2B2B"
+                android:outlineSpotShadowColor="#8A2B2B"
+                android:searchResultHighlightColor="#8A2B2B"
+                android:shadowColor="#8A2B2B"
+                android:textColor="#8A2B2B"
+                android:textColorHighlight="#8A2B2B"
+                android:textColorHint="#8A2B2B"
+                android:textColorLink="#8A2B2B"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/phone_number"
+                style="@android:style/Widget.DeviceDefault.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:focusedSearchResultHighlightColor="#8A2B2B"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:outlineAmbientShadowColor="#8A2B2B"
+                android:outlineSpotShadowColor="#8A2B2B"
+                android:searchResultHighlightColor="#8A2B2B"
+                android:shadowColor="#8A2B2B"
+                android:textColor="#8A2B2B"
+                android:textColorHighlight="#8A2B2B"
+                android:textColorHint="#8A2B2B"
+                android:textColorLink="#8A2B2B"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/location"
+                style="@android:style/Widget.DeviceDefault.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:focusedSearchResultHighlightColor="#8A2B2B"
+                android:hint="Location"
+                android:inputType="textPostalAddress"
+                android:outlineAmbientShadowColor="#8A2B2B"
+                android:outlineSpotShadowColor="#8A2B2B"
+                android:searchResultHighlightColor="#8A2B2B"
+                android:shadowColor="#8A2B2B"
+                android:textColor="#8A2B2B"
+                android:textColorHighlight="#8A2B2B"
+                android:textColorHint="#8A2B2B"
+                android:textColorLink="#8A2B2B"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/service_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:backgroundTint="#8A2B2B"
+                android:padding="10dp"
+                android:popupBackground="#FFF"
+                android:spinnerMode="dropdown"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Light" />
+
+            <EditText
+                android:id="@+id/venue_capacity"
+                style="@android:style/Widget.DeviceDefault.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:focusedSearchResultHighlightColor="#8A2B2B"
+                android:hint="Venue capacity (Only for venues)"
+                android:inputType="text"
+                android:outlineAmbientShadowColor="#8A2B2B"
+                android:outlineSpotShadowColor="#8A2B2B"
+                android:searchResultHighlightColor="#8A2B2B"
+                android:shadowColor="#8A2B2B"
+                android:textColor="#8A2B2B"
+                android:textColorHighlight="#8A2B2B"
+                android:textColorHint="#8A2B2B"
+                android:textColorLink="#8A2B2B"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/venue_rent"
+                style="@android:style/Widget.DeviceDefault.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:ems="10"
+                android:focusedSearchResultHighlightColor="#8A2B2B"
+                android:hint="Venue rent/Hr (Only for venues)"
+                android:inputType="number"
+                android:outlineAmbientShadowColor="#8A2B2B"
+                android:outlineSpotShadowColor="#8A2B2B"
+                android:searchResultHighlightColor="#8A2B2B"
+                android:shadowColor="#8A2B2B"
+                android:textColor="#8A2B2B"
+                android:textColorHighlight="#8A2B2B"
+                android:textColorHint="#8A2B2B"
+                android:textColorLink="#8A2B2B"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:backgroundTint="#8A2B2B"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

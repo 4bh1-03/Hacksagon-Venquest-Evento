@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Evento"
+        tools:targetApi="31">
+        <activity
+            android:name=".caterer_payment"
+            android:exported="false" />
+        <activity
+            android:name=".venue_payment"
+            android:exported="false" />
+        <activity
+            android:name=".customer_view_venue1"
+            android:exported="false" />
+        <activity
+            android:name=".customer_interface_decorator1"
+            android:exported="false" /> <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- Launcher Activity -->
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other Activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer_interface1"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_interface_caterer1"
+            android:exported="false" />
+        <activity
+            android:name=".Main_interface_vendor"
+            android:exported="false" />
+        <activity
+            android:name=".vendor_selection"
+            android:exported="false" />
+        <activity
+            android:name=".Vendor_details_upload"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Caterer_detail_upload"
+            android:exported="false" />
+        <activity
+            android:name=".Decorator_details_upload"
+            android:exported="false" />
+        <activity
+            android:name=".Image_upload"
+            android:exported="false" /> <!-- Backup rules (if you have them) -->
+        <meta-data
+            android:name="android:dataExtractionRules"
+            android:resource="@xml/data_extraction_rules" />
+        <meta-data
+            android:name="android:fullBackupContent"
+            android:resource="@xml/backup_rules" />
+    </application>
+
+</manifest>

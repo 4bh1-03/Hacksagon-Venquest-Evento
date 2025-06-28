@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Evento" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Theme.Evento" parent="Base.Theme.Evento" />
+</resources>

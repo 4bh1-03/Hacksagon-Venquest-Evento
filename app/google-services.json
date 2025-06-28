@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945448975878",
+    "project_id": "evento-venquest",
+    "storage_bucket": "evento-venquest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945448975878:android:84f72da4edaf1c8b108d87",
+        "android_client_info": {
+          "package_name": "com.example.evento"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAZeKC2eqbnl5Gr8rYMxgOlR7qcRmn8qQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/venue"
+        android:title="Venues"
+        android:icon="@drawable/image_removebg_preview__2_"/>
+    <item
+        android:id="@+id/caterer"
+        android:title="Catering"
+        android:icon="@drawable/image_removebg_preview__1_"/>
+    <item
+        android:id="@+id/decorator"
+        android:title="Decorations"
+        android:icon="@drawable/_165167"/>
+    <item
+        android:id="@+id/events"
+        android:title="My Events"
+        android:icon="@drawable/baseline_event_24"/>
+
+</menu>

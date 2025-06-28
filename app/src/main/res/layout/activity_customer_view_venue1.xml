@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2C9C9"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Image RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewImages"
+                android:layout_width="match_parent"
+                android:layout_height="246dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Vendor Info Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#8A2B2B">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Service provider Name"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Service name"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Venue capacity"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Venue Rent/hr"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Location"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Map View -->
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- User Input Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <EditText
+                        android:id="@+id/editTextText12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Name"
+                        android:padding="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:textColorHint="#8A2B2B"
+                        android:layout_marginBottom="12dp"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/editTextNumber2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Mobile Number"
+                        android:padding="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:textColorHint="#8A2B2B"
+                        android:layout_marginBottom="12dp"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/editTextText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Check Availability (hh:mm - hh:mm)"
+                        android:padding="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:textColorHint="#8A2B2B"
+                        android:layout_marginBottom="12dp"
+                        android:inputType="text" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Date Input -->
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Date"
+                android:padding="12dp"
+                android:backgroundTint="#8A2B2B"
+                android:textColorHint="#8A2B2B"
+                android:layout_marginBottom="24dp"
+                android:inputType="date" />
+
+            <!-- Check Availability Button -->
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Availability"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#8A2B2B"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Availability Status -->
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Availability Status"
+                android:textColor="#8A2B2B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Book Now Button -->
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#8A2B2B"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

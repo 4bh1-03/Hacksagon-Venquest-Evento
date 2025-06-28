@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2C9C9"
+    android:fillViewport="true"
+    tools:context=".Customer_interface_caterer1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Images RecyclerView (Horizontal Scroll) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewImages"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="24dp"
+            android:clipToPadding="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:overScrollMode="never"
+            android:orientation="horizontal" />
+
+        <!-- Vendor Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="12dp"
+            app:cardBackgroundColor="#8A2B2B"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Service provider Name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Service name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Location"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Veg and Non veg plate rate"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Items RecyclerView (Vertical Scroll) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewItems"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_bg"
+            android:elevation="4dp"
+            android:nestedScrollingEnabled="false"
+            android:padding="8dp" />
+
+        <!-- MapView -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <!-- Book Now Button -->
+        <Button
+            android:id="@+id/buttonBookNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Book Now"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#8A2B2B" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2C9C9"
+    tools:context=".caterer_payment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Image RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Items RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Payment Details Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Per plate cost: N/A"
+                        android:textColor="#8A2B2B"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- Number of Guests -->
+                    <EditText
+                        android:id="@+id/editTextNumberSigned"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:hint="Enter total number of guests"
+                        android:inputType="numberSigned"
+                        android:padding="12dp"
+                        android:textColorHint="#8A2B2B" />
+
+                    <!-- Customer Name -->
+                    <EditText
+                        android:id="@+id/editTextText14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:hint="Enter your name"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColorHint="#8A2B2B" />
+
+                    <!-- Phone Number -->
+                    <EditText
+                        android:id="@+id/editTextPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:hint="Enter your phone number"
+                        android:inputType="phone"
+                        android:padding="12dp"
+                        android:textColorHint="#8A2B2B" />
+
+                    <!-- Date -->
+                    <EditText
+                        android:id="@+id/editTextDate2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:hint="Enter the date"
+                        android:inputType="date"
+                        android:padding="12dp"
+                        android:textColorHint="#8A2B2B" />
+
+                    <!-- Time -->
+                    <EditText
+                        android:id="@+id/editTextTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="#8A2B2B"
+                        android:hint="Enter the timing"
+                        android:inputType="time"
+                        android:padding="12dp"
+                        android:textColorHint="#8A2B2B" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pay Button -->
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay Amount"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#8A2B2B"
+                android:layout_marginBottom="24dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

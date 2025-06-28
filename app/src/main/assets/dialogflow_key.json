@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "evento-venquest",
+  "private_key_id": "23d9f9c79423455d3cc3092c5f1572df5e281033",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDJKcVsu4e5cQS\nzL3C/BNRRU2+HdQ/dCyeAJyswoyEWgdGqagCbyKxBjjWZZMhZHDzCFkXq+7r6SDD\nhSjy5Z1gbGhQRCYX7/NhtMAexXzs0C2qq0aFujyVrKafLNqT+Frnl8HnCGWLgsSZ\nZwV0Qp/XER9hyBea+WTApRjHOxToFiNUz2M+HCCGtRWAXqTvSOdBX43SekdfE+HJ\nGfjTD2Nst3ixMtQNBnuvx/VkygcZfRGyIedxnFVocL4s7fn3JjoPOtHDfdtX1Cdg\n/LX7TrwrFA4n7yZ0A64hk9tKdaL5rmvoUIvaQboPYe2Cm2fqVengLOtn4ZKaiOVZ\nh4sKi0IvAgMBAAECggEAVi0iAkGdyZRDFeBHrsteBoZZ8iq/F/SIXZA8oEhcAHi3\nfNugP87vXYi3YerCYj02agUWPw9k99ZgayercTS4XqQRHt0xi2GiM9Q8AXrKE9RN\nTnDLuHOJnLl9bY7DyhOjpWGNtiatnUH26x2lOXXQm4vKtYZE8mHPPgnKmvT64xBZ\n78GBaInxfT8lw9Ua4WMUwmo382z7+xEJMniSAB8Is6ruLw4fNfv6R+811SbBcGS9\nqcKfCm+W9Rjy//qblAVb5/wy9VcnVSfMIdKPucSL9X/w7FxTa18ciC+fIh5qc3cA\n5xd9HyAPwqv637YcAyKYV/7QiXub0wLFMKP+jcofmQKBgQDtSKmBXAW1s6f7EWmG\nhiRt1DZTy6MMjJZnXNtCoEMh4zuL6qlRqhiTrJ0an2Kdjq6zeTKdw7vcbGPg5Yi0\nyhI8Ngd+xIm8cGEmTnZymPsqPndCp5XwAyQA+Yp3f0+Zhy7p/OpCupgDp/C6OX+F\ngMus9w1p1oQ3weUM6Ys0YF0nhwKBgQDSiRFtBFagQgrcX8MfXtnlr4dLaUBKzRFY\nTTDTG6dMBGB7t8IWNdeuCActuGjDy5Rhn5sDxfUWeu8xBy5lp8YKuW5iuQVIo3ZN\nDbTXw2TOyOrp/SfBYPXln3vng1zxvPa2z1fCclOHMITPbGS7wEuGJmX8ePIQ4TS7\nWHoyzGfqGQKBgCorUqyBrSYYko7lDkrxBgJax3jm5MgzJ/ugnfrePnAEUS3Re1vf\nDdUYxSbZEo6Lr/KHZH5zLazDupBaWow+qTT4KSbXSN8rXaiQIy7Ej0Z3qXw4CkaI\nWFqv/nK0NnJDewvsfbl0LdXgf8CovUf9lrTbhw+7Ju490DYWPz4Eril7AoGAV6vi\niM5EsImv8iMiov6hqGcW5Q1YS43nyiiiy1Z5rUspTnuwJAWZ4gvPyXdAkUBGcvy+\n1axqqkjZMEZ4SLa73p1nXU8E50HCssWhaDQi14WNZZEZLAsPeuaV90uZucThzDC9\nr+hh5isLM0FFFXY3PQ7ia2eGDgdqKRXoFR1PrIkCgYBdLXiKA1p8yUmR4j0C5Y7v\nlpP239yvXuY/fzfx9oux66GkQPAk44uSVH4F9pESft08PyPJWqe4HYrb7SWdF5eA\nwLYSfwQkzsHb2ipjgBLa+XmY/CYFE06FuDEdzGLk1VR64w7U3ceDX1QwNGHIbOYN\npF6dU6ds82Mb3LEwwXNunw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-android-client@evento-venquest.iam.gserviceaccount.com",
+  "client_id": "111243106690100069824",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-android-client%40evento-venquest.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
